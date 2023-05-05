@@ -11,6 +11,7 @@ class FlickVideoProgressBar extends StatelessWidget {
     this.onDragStart,
     this.onDragUpdate,
     FlickProgressBarSettings? flickProgressBarSettings,
+    this.onTap
   }) : flickProgressBarSettings = flickProgressBarSettings != null
             ? flickProgressBarSettings
             : FlickProgressBarSettings();
@@ -19,6 +20,7 @@ class FlickVideoProgressBar extends StatelessWidget {
   final Function()? onDragStart;
   final Function()? onDragEnd;
   final Function()? onDragUpdate;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -88,6 +90,8 @@ class FlickVideoProgressBar extends StatelessWidget {
             return;
           }
           seekToRelativePosition(details.globalPosition);
+          if(onTap!=null)
+            onTap!();
         },
       );
     });
