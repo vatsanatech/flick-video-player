@@ -12,12 +12,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  video_player: ^2.4.0
-  provider: ^6.0.1
-  wakelock: ^0.6.0
-  universal_html: ^2.0.8
-  dio: ^4.0.6
-  path_provider: ^2.0.11
+  video_player: ^2.6.1
+  provider: ^6.0.5
+  wakelock: ^0.6.2
+  universal_html: ^2.2.2
+  dio: ^5.1.2
+  path_provider: ^2.0.15
 
 dev_dependencies:
   flutter_test:
