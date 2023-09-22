@@ -12,7 +12,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  video_player: ^2.6.1
+  video_player:
+    git:
+      url: https://github.com/vatsanatech/packages
+      ref: main
+      path: packages/video_player/video_player
   provider: ^6.0.5
   wakelock: ^0.6.0
   universal_html: ^2.2.2
